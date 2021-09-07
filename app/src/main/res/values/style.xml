@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <!-- Style for category of music -->
+    <style name="CategoryStyle">
+        <item name="android:gravity"> center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for ListView Artist -->
+    <style name="ListViewArtistStyle">
+        <item name="android:layout_width">@dimen/list_album_art_width_100dp</item>
+        <item name="android:layout_height">@dimen/list_album_art_height_100dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+    </style>
+
+    <!-- Style for Item_List Heading textView -->
+    <style name="ListView_HeadingStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:textColor">@color/colorMainHeadingList</item>
+        <item name="android:textSize">@dimen/song_name_text_size_20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for Item_List Artist TextView -->
+    <style name="ListView_Artist_TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginTop">@dimen/artist_margin_4dp</item>
+        <item name="android:layout_marginBottom">@dimen/artist_margin_4dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_below">@id/song_name</item>
+    </style>
+
+    <!-- Style fot Item_List Album TextView -->
+    <style name="ListView_AlbumName_TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_below">@id/artist_name</item>
+        <item name="android:layout_marginBottom">@dimen/artist_margin_4dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+    </style>
+
+    <!-- Style for the Cover ImageView in activity_now_playing.xml -->
+    <style name="NpAlbumStyle">
+        <item name="android:layout_width">@dimen/np_album_art_width</item>
+        <item name="android:layout_height">@dimen/np_album_art_height</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/np_album_art_margin</item>
+    </style>
+
+    <!-- Style for the Title of the song TextView in activity_now_playing.xml -->
+    <style name="TitleSongStyle">
+        <item name="android:textColor">@color/colorMainHeadingList</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/song_name_text_size_20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for the Singer of the song TextView in activity_now_playing.xml -->
+    <style name="SingerSongStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorMainHeadingList</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/dimen_16dp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+    <!-- Style for the SeekBar SeekBar in activity_now_playing.xml -->
+    <style name="SeekBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/np_album_art_margin</item>
+        <item name="android:layout_marginStart">@dimen/seekbar_margin_start_end</item>
+        <item name="android:layout_marginEnd">@dimen/seekbar_margin_start_end</item>
+    </style>
+
+    <!-- Style for the Media Controller LinearLayout in activity_now_playing.xml -->
+    <style name="MediaControllerLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/np_album_art_margin</item>
+        <item name="android:layout_marginStart">@dimen/np_album_art_margin</item>
+        <item name="android:layout_marginEnd">@dimen/np_album_art_margin</item>
+    </style>
+
+    <!-- Style for RewindButton -->
+    <style name="RewindStyle">
+        <item name="android:layout_width">@dimen/rewind_fast_width</item>
+        <item name="android:layout_height">@dimen/rewind_fast_height</item>
+        <item name="android:layout_marginTop">@dimen/rewind_fast_margin_top_25dp</item>
+
+    </style>
+    <!-- Style for PlayButton -->
+    <style name="PlayButton">
+        <item name="android:layout_width">@dimen/play_button_100dp_width</item>
+        <item name="android:layout_height">@dimen/play_button_100dp_height</item>
+    </style>
+
+
+    <!-- Style for the SeekBar SeekBar in activity_now_playing.xml -->
+    <style name="ListViewAlbumArtStyle">
+        <item name="android:layout_width">@dimen/list_album_art_width_100dp</item>
+        <item name="android:layout_height">@dimen/list_album_art_height_100dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Music Structure App</string>
+
+    <!-- Category name for italy [CHAR LIMIT=20] -->
+    <string name="category_italy">Top songs Italy</string>
+
+    <!-- Category name for sardinia [CHAR LIMIT=20] -->
+    <string name="category_sardinia">Top songs Sardinia</string>
+
+    <!-- Category name for austria [CHAR LIMIT=20] -->
+    <string name="category_austria">Top songs Austria</string>
+    <string-array name="array_name"> name
+        <item>String 1</item>
+        <item>String 2</item>
+        <item>String 3</item>
+        <item>String 4</item>
+        <item>String 5</item>
+    </string-array>
+
+</resources>

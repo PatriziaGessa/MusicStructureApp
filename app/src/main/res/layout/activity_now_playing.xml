@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.android.musicstructureapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/cover_now_playing"
+        style="@style/NpAlbumStyle" />
+
+    <TextView
+        android:id="@+id/song_player"
+        style="@style/TitleSongStyle"
+        tools:text="Song" />
+
+    <TextView
+        android:id="@+id/artist_player"
+        style="@style/SingerSongStyle"
+        tools:text="Singer" />
+
+
+    <SeekBar
+        android:id="@+id/seek_bab"
+        style="@style/SeekBar"
+        android:layout_marginStart="@dimen/seekbar_margin_start_end" />
+
+    <LinearLayout
+        style="@style/MediaControllerLinearLayout"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/rewind"
+            style="@style/RewindStyle"
+            android:layout_weight="1"
+            android:src="@drawable/skip_previous" />
+
+        <ImageView
+            android:id="@+id/play"
+            style="@style/PlayButton"
+            android:layout_weight="1"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/fast_forward"
+            style="@style/RewindStyle"
+            android:layout_weight="1"
+            android:src="@drawable/skip_next" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
